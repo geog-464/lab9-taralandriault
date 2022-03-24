@@ -4,19 +4,41 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>lab9</title>
-        
+		
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
-        
-		<!--you can also place internal styles here; you would place these within <style> tags-->
-    </head>
-
-    <body>
-        <!--put your initial page content here-->
+       
+	    <!-- link to data -->
+		<script type="text/javascript" src="data/megacities.js"></script>
 		
-        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+		<!--you can also place internal styles here; you would place these within <style> tags-->
+		
+		<!-- link to leaflet styles -->
+		<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+		
+		<!-- link to leaflet scripts -->
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+	</head>
+    <body>
+		<div id="title"> 
+		 <p> Lab 9 - Tara Landriault </p>
+		</div>
+        <!--put your initial page content here-->
+		<div id="div1">
+			<p id="qTwo"></p>
+			<p> <b>Q3.</b> The onload method basically tells the computer to initialize the first function of the script only once the page has finished loading.</p>
+			<p> <b>Q4.</b> It is an array of objects which is very similar to python dictionaries.</p>
+		</div>
+		<div id="mapdiv">
+		</div>
 
-        <!--put your external script links here-->
+        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+		
+		<script>
+		document.getElementById("qTwo").innerHTML = "<b>Q2.</b> The JS script is only loaded at the end because it is called upon at the end of the HTML file. This is done so that the page displays as quickly as possible and the script will load and be added at the end when it is fully loaded.";
+		</script>
+    
+		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
